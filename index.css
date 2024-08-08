@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(180deg, #fdfcfb 0%, #ab8ecb 100%);
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+}
+
+.profile-picture{
+    width: 300px;
+    height: 300px;
+    box-shadow: 1px 1px 10px gray;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://media.licdn.com/dms/image/D4D03AQE6ydr-euRlhQ/profile-displayphoto-shrink_800_800/0/1702584510756?e=1728518400&v=beta&t=eI2Res8pRS9J-n0tlLUq9a15Qr1Mna6SFkVWZXbrk4k");
+    background-position: top;
+    background-size: cover;
+}
+
+
+.info{
+    margin: 3em 0;
+    text-align: center;
+}
+
+.greetings{
+    font-size: 2.5em;
+}
+
+.name-surname{
+    font-size: 3em;
+}
+.links{
+    display:flex;
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    margin: 0 1em;
+    background-color: black;
+}
+
+.zoom:hover{
+    transform: scale(1.2);
+}
