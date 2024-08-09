@@ -21,8 +21,8 @@ body{
 .profile-picture{
     width: 300px;
     height: 300px;
-    border: 2px solid #a792c0;
-    box-shadow: 1px 1px 10px #513b6a;
+    border: 3px solid #fdfdfd;
+    box-shadow: 1px 1px 15px #513b6a;
     border-radius: 100%;
     display: flex;
     justify-content: center;
@@ -31,11 +31,6 @@ body{
     background-position: top;
     background-size: cover;
 }
-
-.profile-picture:hover{
-    box-shadow: 1px 1px 10px rgb(30, 30, 30);
-}
-
 
 .info{
     margin: 3em 0;
@@ -65,22 +60,27 @@ body{
     box-sizing: border-box;
 }
 
-.zoom:hover{
-    animation-name: spin;
-    animation-duration: 1.3s;
-    animation-iteration-count: 1;
-    cursor:pointer;
-    transform: scale(1.1); 
-    border: 2px solid #a792c0;
-    box-shadow: 1px 1px 15px #513b6a;
+.zoom {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, border 0.2s ease-in-out;
 }
 
-@keyframes spin {
-    0% {
-      transform: rotate(0deg);
+.zoom:hover{
+    cursor:pointer;
+    border: 2px solid #ffffff;
+    box-shadow: 1px 1px 10px #2a1b3b;
+    animation: spin-and-scale 1.3s ease-in-out forwards;
+    transform: scale(1.2);  
+}
 
+@keyframes spin-and-scale {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(360deg) scale(1.17);
     }
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg) scale(1.17);
     }
+
   }
