@@ -55,6 +55,7 @@ body{
     align-items: center;
     width: 60px;
     height: 60px;
+    border: 2px solid #505050;
     border-radius: 100%;
     margin: 1em;
     background-color: black;
@@ -67,7 +68,7 @@ body{
 
 .zoom:hover{
     cursor:pointer;
-    border: 2px solid #ffffff;
+    border: 3px solid #ffffff;
     box-shadow: 0 0 10px #2a1b3b;
     animation: spin-and-scale 1.3s ease-in-out forwards;
     transform: scale(1.2);  
