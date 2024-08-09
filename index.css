@@ -48,6 +48,16 @@ body{
 .links{
     display:flex;
 }
+.link-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-button span{
+    font-weight: 500;
+}
 
 .link{
     display: flex;
@@ -96,6 +106,9 @@ body{
     .profile-picture{
         width: 200px;
         height: 200px;
+    }
+    .link-button span{
+        display: none;
     }
   }
 
