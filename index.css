@@ -92,4 +92,24 @@ body{
         height: 45px;
         margin: 0.2em;
     }    
+    .profile-picture{
+        width: 200px;
+        height: 200px;
+    }
+  }
+
+  @media screen and (max-width:320px) {
+    .links{
+        flex-direction: column;
+    }  
+    .greetings{
+        font-size: 1.5em;
+    }
+    .name-surname{
+        font-size: 2em;
+    }
+    .profile-picture{
+        width: 150px;
+        height: 150px;
+    }
   }
