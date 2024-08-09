@@ -67,7 +67,7 @@ body{
 .zoom:hover{
     cursor:pointer;
     border: 2px solid #ffffff;
-    box-shadow: 1px 1px 10px #2a1b3b;
+    box-shadow: 0 0 10px #2a1b3b;
     animation: spin-and-scale 1.3s ease-in-out forwards;
     transform: scale(1.2);  
 }
