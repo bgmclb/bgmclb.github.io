@@ -28,7 +28,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("https://media.licdn.com/dms/image/D4D03AQE6ydr-euRlhQ/profile-displayphoto-shrink_800_800/0/1702584510756?e=1728518400&v=beta&t=eI2Res8pRS9J-n0tlLUq9a15Qr1Mna6SFkVWZXbrk4k");
     background-position: top;
     background-size: cover;
 }
@@ -56,8 +55,17 @@ body{
 }
 
 .link-button span{
-    font-weight: 500;
+    font-weight: 600;
+    visibility: hidden;
+    opacity: 0;
+    text-orientation: upright;
 }
+
+/* .link-button:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+} */
+
 
 .link{
     display: flex;
@@ -83,6 +91,7 @@ body{
     animation: spin-and-scale 1.3s ease-in-out forwards;
     transform: scale(1.2);  
 }
+
 
 @keyframes spin-and-scale {
     0% {
